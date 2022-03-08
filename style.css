@@ -1,0 +1,246 @@
+@charset "Utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&family=Lora&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&family=Lato:ital,wght@0,300;1,100&family=Lora&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+@import url( "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+   
+    --font-secudary:"Muli",serif;
+}
+.Grid{
+/*background-color: red;*/
+width: 2.5em;
+height: 2.5em;
+position: fixed;
+z-index: 100;
+right: 2rem;
+top: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+cursor: pointer;
+}
+
+.show-menu .Grid{
+    right: 16rem;
+}
+
+
+.Lane{
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+    height: .1rem;
+    background-color: #fff;
+    transition: transform 1s;
+}
+
+.show-menu #Lane1{
+
+    transform: rotate(45deg) translate(.3rem , .45rem);
+}
+
+.show-menu #Lane2{
+    opacity: 0;
+    visibility:hidden;
+}
+
+.show-menu #Lane3{
+
+    transform: rotate(-45deg) translate(.3rem , -.45rem);
+}
+.Grid span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00d2ff;
+    color: #fff;
+    font-family: var(--font-secudary);
+    opacity: 0;
+}
+
+.Grid span::before{
+    content: "";
+    position: absolute;
+    border-right:.5rem solid #00d2ff ;
+    border-top:.5rem solid transparent ;
+    border-left:.5rem solid transparent ;
+    border-bottom:.5rem solid transparent ;
+    left: -1em;
+}
+.show-menu .Grid:hover span{
+    opacity:1 ;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0,0.8);
+
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom  25s;
+   
+}
+.Banner{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+}
+.Banner h1{
+ color: #ffff;
+ font-size: 3.5rem;
+ font-family:"Lato";
+ font-weight:200;
+ text-shadow: .3rem .4rem 3px rgba(0,0,0,.4);
+ line-height: 3.8rem;
+ margin-bottom: 2rem;
+ opacity: 0;
+ animation: MoveBanner 1s 0.5s forwards;
+ 
+}
+.Banner p{
+    color: #fff;
+    font-family: "josefin Slab" , sans-serif;
+    font-size: 2.1rem;
+    text-shadow: .2rem .2rem  rgba(0,0,0,.4);
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    animation: MoveBanner 1s 0.7s forwards;
+}
+.Banner button{
+    font-family:"Muli",sans-serif ;
+    color: #000;
+    text-transform: uppercase;
+    background: #00d2ff;  
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  
+    background: linear-gradient(to left, #3a7bd5, #00d2ff); 
+    letter-spacing: .2rem;
+    padding: 1.2rem 4rem ;
+    border: none;
+    color: antiquewhite;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: MoveBanner 1s 0.9s forwards;
+}
+
+@keyframes MoveBanner{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg); 
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes zoom{
+    0%{
+     transform: scale(1.3);
+    }
+   100%{
+      transform:scale(1) ; 
+   }
+   
+   }
+
+.sidebar{
+width: 20rem;
+height: 100vh;
+background-color: rgb(238, 247, 255);
+position: fixed;
+top:0;
+right:0;
+right: -20rem;
+transition: all 1s;
+}
+.show-menu .sidebar{
+    right: 0;
+}
+
+
+
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .7rem;
+}
+
+.menu-link{
+    font-family:var(--font-secudary) ;
+    font-size: 2rem;
+    color: rgb(87, 87, 87);
+    transition:color 1s;
+    
+}
+
+.menu-link:hover{
+    color: #00d2ff;
+   
+}
+.Social-Media{
+    
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Social-Media i{
+    background: #00d2ff;  
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  
+    background: linear-gradient(to left, #3a7bd5, #00d2ff); 
+    color: rgb(252, 249, 249);
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 1s;
+    border-radius: 50%;
+}
+.Social-Media i:hover{
+ color: rgb(255, 230, 8);
+   
+}
+/*Ruth =>em = rem
+/*X é a posição horizontal e Y é a posição vertical e tem a posição Z que vai definir a profundidade do elemento
