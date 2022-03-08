@@ -7,5 +7,5 @@
  ## Icones
   :package: nova funcionalidade
   :up: atualização
-  :beatle: correção de bug
-  :checkered_flag: release
+  :beatle:correção de bug
+  :umbrella:release
