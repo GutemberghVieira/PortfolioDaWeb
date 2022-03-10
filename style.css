@@ -249,8 +249,8 @@ transition: all 1s;
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows:  repeat(10, 11rem);
-    row-gap: .5rem;
+    grid-template-rows:  repeat(4, 7rem);
+    row-gap: 5rem;
    
 }
 
