@@ -249,7 +249,7 @@ transition: all 1s;
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows:  repeat(7, 11rem);
+    grid-template-rows:  repeat(10, 11rem);
     row-gap: .5rem;
    
 }
