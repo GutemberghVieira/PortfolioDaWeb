@@ -335,8 +335,9 @@ transition: all 1s;
     
 }
 .card{
-    width: 20rem;
-    height: 30rem;
+    width: 18rem;
+    height: 25rem;
+    position:relative ;
 }
 
 .card-img-wrapper{
@@ -344,14 +345,73 @@ transition: all 1s;
     height: 100%;
     background-color: #262626;
     border-radius: .5rem;
+ 
 }
 
 .card-img-wrapper img{
     object-fit: cover;
     width: 100%;
     height: 100%;
-   
+    border-radius: .5rem;
     opacity: .8;
+    transition: opacity .3s ;
+}
+.card:hover .card-img-wrapper img{
+    opacity:.5 ;
+}
+.card-info{
+    visibility: hidden;
+    position: absolute;
+    transition: all .3s;
+    bottom: 0;
+    opacity: 0;
+    padding: 2rem;
+    font-weight: 500;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0,.6);
+}
+
+
+.card-info h2{
+ font-family: var(--font-Terceary);
+ font-size: 2rem;
+ color: #eee;
+}
+.card-info h3{
+    font-family: var(--font-secudary);
+   font-weight: bolder;
+   font-size: 1.6rem;
+   color: #40ffa6;
+   margin-bottom: 1.5rem;
+
+}
+
+.card-info p{
+  font-family: var(--font-primary);
+  color: #eee;
+  font-weight: bold;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.card-info button{
+    
+  
+   width: 8rem;
+   height: 3rem;
+   background-color:#00d2ff;  
+   background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  
+   background: linear-gradient(to left, #3a7bd5, #00d2ff);  ;
+   border: none;
+   font-family: var(--font-secudary);
+   font-size: 1rem;
+   color: #eee;
+   border-radius: .5rem;
+   box-shadow: 0 .1rem .8rem rgba(0,0,0,.4);
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
 }
 
 /*Ruth =>em = rem
