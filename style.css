@@ -308,7 +308,7 @@ transition: all 1s;
 }
 .conhecimento-header h3{
     font-family: var(--font-primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 1rem;
  
 }
