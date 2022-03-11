@@ -532,6 +532,57 @@ justify-content: center;
     margin-top: 1rem;
 }
 
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #17181e;
+    display: flex;
+    justify-content: center;
+   
+}
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secudary);
+    color: #a7a7a7;
+    font-size: 1.4rem;
+}
+
+.social-list a{
+    margin: 0.2rem;
+   color:#a7a7a7;
+   font-size: 2rem;
+}
+
+.social-list ul{
+    display: flex;
+    letter-spacing: 2rem;
+}
+.social-list i:hover{
+    color: #00d2ff;
+    transition: color 2s;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  
+    background: linear-gradient(to left, #3a7bd5, #00d2ff); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0  0.1rem 0.6rem #000009;
+}
 
 /*Ruth =>em = rem
 /*X é a posição horizontal e Y é a posição vertical e tem a posição Z que vai definir a profundidade do elemento
