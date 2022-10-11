@@ -1,0 +1,409 @@
+@charset "Utf-8";
+  /*flex-grow essa propriedade define a proporção do espaço ocupado por um item quanto maior o número maior o espaço que ele ocupa*/
+
+  /*flex-shrink define a capacidade de redução do tamanho do item*/
+
+  /*Flex basis indica o tamanho inicial do flex items antes da distribuição do espaço restante*/
+
+  /*
+  Row|row-reverse <-> column| column-reverse
+  */
+
+
+  /*
+  Flex-start and end space-evelyn between and around*/
+
+  @font-face {
+    font-family: "GardenParty";
+    src: url(garden_party/GardenParty_PERSONAL_USE_ONLY.otf);
+  }
+ 
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family:times, sans-serif;
+
+}
+
+.header{
+  height: 100vh;
+  width: 100%;
+  background: url(anime\ android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-f2tyi.jpg)no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: scroll;
+
+ 
+}
+
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:30px ;
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
+.Logo{
+  color:#2a2829 ;
+  font-size:30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+}
+span{
+  color: white;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px ;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover{
+  color:#53576b;
+
+}
+
+.btn{
+  background: #ffffe5;
+  padding: 10px 25px;
+  color:#2a2829;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  animation-name: #f4eed4;
+  transition: transform .5s;
+}
+
+
+.btn:hover{
+color: #f4eed4;
+transform: scale(1.2);
+background: #2a2829;
+}
+
+.content{
+  position: absolute;
+  top: 60%;
+  left:8%;
+  transform: translateY(-30%);
+
+}
+
+h4,h1, h3{
+  color: #fcfcfc;
+  text-overflow: clip;
+  
+}
+
+h1{
+  text-transform: uppercase;
+  color:#2a2829;
+  margin: 20px 0px 20px;
+  font-size: 45px;
+}
+h3{
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4{
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+
+}
+
+.iseeyoulater form{
+   width: 350px;
+   max-width: 100%;
+   position: relative;
+  
+}
+
+.iseeyoulater form input:first-child{
+  width: 90%;
+  padding: 11px 100px 14px 14px;
+  display:inline-block;
+  outline: none;
+  border: 2px solid #2a2829;
+  border-radius:30px;
+
+}
+
+.iseeyoulater form input:last-child{
+  position: absolute;
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #2a2829;
+  color: #f4eed4;
+  box-shadow: 0px 0px 15px, 0px 0px 14px #ffd000;
+  top: 3px;
+  right: -81px;
+  transform:#2a2829;
+}
+
+.iseeyoulater form input:last-child:hover{
+  background: #f4eed4;
+  color: #2a2829;
+  transition: .5s;
+}
+
+
+
+.about{
+  width: 100%;
+  padding: 100px 0;
+  background-color:#2A2829;
+}
+
+.about img{
+  height: auto;
+  width: 300px;
+}
+
+.about-text{
+  width: 400px;
+}
+
+.main{
+  width: 100%;
+ max-width: 90%;
+ margin:0 auto;
+ display:flex;
+ align-items: center;
+ justify-content:space-around;
+}
+
+.main h2{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.main h5{
+  color: crimson;
+  font-size: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.main p{
+  color: white;
+  letter-spacing: 2px;
+  text-overflow: clip;
+  margin-bottom: 45px;
+  line-height: 28px;
+}
+
+.main button{
+  width: 140px;
+  padding: 10px ;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  
+  text-align: center;
+  background:crimson;
+  color:  white;
+
+  cursor: pointer;
+  text-transform: capitalize;
+
+  transition: .4s;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color:  transparent;
+  border: 2px solid #c80122;
+  
+}
+.services{
+  background:#2a2829;
+   width: 100%;
+   padding: 100px 0px;
+}
+
+.title h2{
+  color: #f4eed4;
+  font-size: 75px;
+  letter-spacing: 1px;
+  width: 50%;
+  margin: 30px auto;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card{
+  text-align: center;
+  height: 400px;
+  width: 330px;
+  padding: 20px 35px;
+  background: linear-gradient(86deg, #eb9961, #fcf4b6);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 15px;
+
+}
+
+.card i{
+  font-size: 50px;
+  color: #2f2c2b;
+ 
+  display: block;
+  margin: 25px 0;
+
+}
+
+.card h5{
+  color: #2f2c2b;
+  font-size: 27px;
+  letter-spacing: 2px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+
+.card p{
+  color: #2A2829;
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 27px;
+}
+
+.card a{
+  text-decoration: none;
+  background: #fcf4b6;
+  padding: 10px 15px;
+  color: #2A2829;
+  border-radius: 30px;
+}
+
+.card a:hover{
+  color: #f4eed4;
+  border: 2px solid #f4eed4;
+  background: transparent;
+}
+.contact{
+  width:100%;
+  height: 290px;
+  background: #2A2829;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.contact p{
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.contact a{
+  text-decoration: none;
+  color: #f4eed4;
+  font-size: 15px;
+  padding: 10px ;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact a:hover{
+  color: #eb9961;
+  box-shadow: 0 0 10px #eb9961 ;
+  transition: .6s;
+  border-radius: 30px;
+}
+
+footer{
+  position: relative;
+ width: 100%;
+ height: 400px;
+  background: #2A2829;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+footer p:nth-child(1){
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer p:nth-child(2){
+  color: #eb9961;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.Social{
+  display: flex;
+}
+
+.Social a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 22px 15px;
+  background: linear-gradient(78deg, #eb9961, #FBEEB0, #ECA169);
+  margin-bottom: 10px;
+  color: #2a2829;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.Social a:hover{
+  color: #FBEEB0;
+border: 1px solid #FBEEB0;
+background: transparent;
+}
+
+.until-the-end{
+  font-size: 17px;
+  letter-spacing: 1px;
+
+}
